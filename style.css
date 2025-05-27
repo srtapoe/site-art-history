@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #fdf4e3;
+    color: #4a2e1d;
+    line-height: 1.6;
+  }
+  
+  /* Cabeçalho */
+  .topo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff6dc;
+    padding: 20px 40px;
+    border-bottom: 2px solid #ccc;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #4a2e1d;
+    font-weight: bold;
+  }
+  
+  .menu a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Banner */
+  .banner {
+    background: linear-gradient(135deg, #f0a84f, #f6c64c, #e06938);
+    text-align: center;
+    color: #4a2e1d;
+    padding: 50px 20px;
+  }
+  
+  .banner h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .banner p {
+    font-size: 1.2rem;
+  }
+  
+  /* Introdução */
+  .introducao {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .botoes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .botao {
+    padding: 15px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+    display: block;
+  }
+  
+  /* Cores dos botões */
+  .amarelo {
+    background-color: #f1b64b;
+  }
+  
+  .verde {
+    background-color: #2e7d78;
+  }
+  
+  .vermelho {
+    background-color: #c4452f;
+  }
+  
+  .marrom {
+    background-color: #6a3c2d;
+  }
+  
+  /* Destaque */
+  .destaque {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: #fffaf0;
+  }
+  
+  .texto-destaque {
+    max-width: 400px;
+  }
+  
+  .imagem-destaque img {
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  /* Rodapé */
+  .rodape {
+    background-color: #eee1c9;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 0.9rem;
+  }
+  
+
+  /* Animação nos botões */
+    .botao {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .botao:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
