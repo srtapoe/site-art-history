@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Zoom na Arte - Destaques</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    .cards-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card-content {
+      padding: 16px;
+    }
+
+    .card-content span {
+      color: #777;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .card-content p {
+      margin: 8px 0;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+
+    .card-content a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .card-content a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cards-container">
+    
+    <div class="card">
+      <img src="img1.jpg" alt="Percival Lafer e Pedro Ávila">
+      <div class="card-content">
+        <span>Disciplina 1</span>
+        <p>Percival Lafer e Pedro Ávila entrevistam um ao outro sobre o design moderno e contemporâneo</p>
+        <a href="#">Leia aqui →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img2.jpg" alt="Instalação artística">
+      <div class="card-content">
+        <span>Artigo</span>
+        <p>Livia Benedetti investiga as conexões entre arte e tecnologia no cenário contemporâneo</p>
+        <a href="#">Leia aqui →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img3.jpg" alt="Pintura popular">
+      <div class="card-content">
+        <span>Artigo</span>
+        <p>Beatriz Almeida escreve sobre a efervescência artística no estado de Goiás</p>
+        <a href="#">Leia aqui →</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="img4.jpg" alt="Pintor brasileiro no Musée d'Orsay">
+      <div class="card-content">
+        <span>Entrevista</span>
+        <p>Primeiro brasileiro com exposição individual no Musée d’Orsay fala sobre sua trajetória</p>
+        <a href="#">Leia aqui →</a>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
