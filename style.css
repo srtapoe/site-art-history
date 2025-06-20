@@ -133,7 +133,7 @@
   }
   
 
-  /* Animação nos botões */
+  /* Animação nos botões lá do slide incluido por ultimo */
     .botao {
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
@@ -141,4 +141,60 @@
     .botao:hover {
       transform: scale(1.05);
       box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+    }
+  
+    .cards-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  
+    .card {
+      background-color: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  
+    .card-content {
+      padding: 16px;
+    }
+  
+    .card-content span {
+      color: #777;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  
+    .card-content p {
+      margin: 8px 0;
+      font-size: 15px;
+      line-height: 1.4;
+    }
+  
+    .card-content a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+  
+    .card-content a:hover {
+      text-decoration: underline;
     }
