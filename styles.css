@@ -10,6 +10,21 @@
       color: #3B2F2F;
     }
 
+
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      background-color: #EFCB89; /* ocre claro */
+    }
+
+    .destaques-section {
+      padding: 2rem;
+      text-align: center;
+      background-color: #D1891C; /* caramelo */
+      color: #1A1A1A; /* preto suave */
+    }
+
+
     header {
       background-color: #5C1E0E;
       color: white;
@@ -74,29 +89,29 @@
       margin-bottom: 1rem;
     }
 
+
     .carousel {
-      background-color: #D1891C;
-      color: black;
-      overflow-x: auto;
-      white-space: nowrap;
       display: flex;
+      justify-content: center;
       gap: 1rem;
-      padding-bottom: 1rem;
+      flex-wrap: wrap;
+      margin-top: 1rem;
     }
 
     .carousel::-webkit-scrollbar {
       display: none;
     }
 
+    
+
     .carousel-item {
-      display: inline-block;
-      background-color: #F5E3C8;
+      background-color: #F5E3C8; /* off-white */
       padding: 1rem;
       border-radius: 1rem;
-      width: 240px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      flex-shrink: 0;
-    }
+      width: 250px;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+      }
+
 
     .carousel-item h3 {
       font-weight: 600;
