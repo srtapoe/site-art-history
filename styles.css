@@ -102,7 +102,7 @@
       display: none;
     }
 
-    
+
 
     .carousel-item {
       background-color: #F5E3C8; /* off-white */
@@ -161,4 +161,19 @@
       padding: 1.5rem;
       font-size: 0.875rem;
     }
-  
+    
+    .button-link {
+      display: inline-block;
+      padding: 0.5rem 1rem;
+      background-color: #F5E3C8;
+      color: #1A1A1A;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      margin-top: 0.5rem;
+      transition: background 0.3s;
+    }
+
+.button-link:hover {
+  background-color: #fff;
+    }
