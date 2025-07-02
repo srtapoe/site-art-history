@@ -92,66 +92,87 @@
 
     .carousel {
       display: flex;
-      justify-content: center;
-      gap: 1rem;
-      flex-wrap: wrap;
-      margin-top: 1rem;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px 0;
     }
-
-    .carousel::-webkit-scrollbar {
-      display: none;
-    }
-
-
 
     .carousel-item {
-      background-color: #F5E3C8; /* off-white */
-      padding: 1rem;
-      border-radius: 1rem;
-      width: 250px;
-      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
-      }
-
+      flex: 80 80 400px; /* largura fixa */
+      background-color: #f4f4f4;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
 
     .carousel-item h3 {
-      font-weight: 600;
-      margin-bottom: 0.5rem;
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+      color: #333;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 1rem;
+    .carousel-item p {
+      font-size: 1rem;
+      color: #666;
     }
 
-    @media (min-width: 768px) {
-      .cards {
-        grid-template-columns: repeat(2, 1fr);
-      }
+    .carousel-item:hover {
+    transform: scale(1.05);
     }
 
-    @media (min-width: 1024px) {
-      .cards {
-        grid-template-columns: repeat(3, 1fr);
-      }
+    .cards-carousel {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      padding: 20px;
+      scroll-snap-type: x mandatory;
     }
 
-    .card {
-      border-radius: 1rem;
-      padding: 1.5rem;
+    .card-card {
+      flex: 0 0 300px;
+      height: 400px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 15px;
+      position: relative;
+      scroll-snap-align: start;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
       color: white;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      display: flex;
+      align-items: flex-end;
     }
 
-    .card button {
-      margin-top: 1rem;
-      padding: 0.5rem 1rem;
-      border: none;
-      border-radius: 0.5rem;
-      background-color: #ffffffaa;
-      color: inherit;
-      cursor: pointer;
+    .card-content {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      width: 100%;
+      border-radius: 0 0 15px 15px;
     }
+
+    .card-content h2 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+    }
+
+    .card-content p {
+      font-size: 1rem;
+      margin-bottom: 10px;
+    }
+
+  .card-content a,
+    .card-content button {
+      background-color: #fff;
+      color: #000;
+      border: none;
+      padding: 8px 16px;
+      font-weight: bold;
+      cursor: pointer;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
 
     .footer {
       margin-top: 3rem;
