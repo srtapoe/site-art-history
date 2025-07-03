@@ -98,7 +98,7 @@
     }
 
     .carousel-item {
-      flex: 80 80 400px; /* largura fixa */
+      flex: 30 30 200px; /* largura fixa */
       background-color: #f4f4f4;
       padding: 20px;
       border-radius: 10px;
@@ -123,45 +123,53 @@
     }
 
     .cards-carousel {
-      display: flex;
-      gap: 20px;
-      overflow-x: auto;
-      padding: 20px;
-      scroll-snap-type: x mandatory;
-    }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 0;
+  flex-wrap: wrap; /* permite quebra em telas pequenas */
+  max-width: 1280px;
+  margin: 0 auto; /* centraliza o carrossel */
+}
 
-    .card-card {
-      flex: 0 0 300px;
-      height: 400px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 15px;
-      position: relative;
-      scroll-snap-align: start;
-      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
-      color: white;
-      display: flex;
-      align-items: flex-end;
-    }
+.card-card {
+  width: 300px;
+  height: 450px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  position: relative;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.3s ease;
+}
 
-    .card-content {
-      background: rgba(0, 0, 0, 0.5);
-      padding: 20px;
-      width: 100%;
-      border-radius: 0 0 15px 15px;
-    }
+.card-card:hover {
+  transform: scale(1.03);
+}
 
-    .card-content h2 {
-      margin: 0 0 10px;
-      font-size: 1.2rem;
-    }
+.card-content {
+  background: rgba(0, 0, 0, 0.55);
+  padding: 20px;
+  width: 100%;
+  border-radius: 0 0 15px 15px;
+  text-align: left;
+}
 
-    .card-content p {
-      font-size: 1rem;
-      margin-bottom: 10px;
-    }
+.card-content h2 {
+  margin: 0 0 10px;
+  font-size: 1.2rem;
+}
 
-  .card-content a,
+.card-content p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+    .card-content a,
     .card-content button {
       background-color: #fff;
       color: #000;
