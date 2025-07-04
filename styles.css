@@ -265,9 +265,8 @@
   background-color: #9c2204;
 }
 
-
-/* Dropdown no menu sanduíche */
-.dropdown {
+ /* Dropdown no menu sanduíche */
+ .dropdown {
   position: relative;
   display: inline-block;
 }
@@ -307,3 +306,4 @@
 .show {
   display: flex;
 }
+

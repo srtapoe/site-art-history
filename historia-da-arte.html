@@ -6,19 +6,33 @@
   <title>Disciplina Genérica | Zoom na Arte</title>
   <link rel="stylesheet" href="style-pages.css" />
   <title>História da Arte</title>
-  <link rel="stylesheet" href="css/style-pages.css" />
 </head>
 <body>
   <header class="topo">
     <div class="logo">
       <h1>ZOOM NA ARTE</h1>
+      <nav class="navbar">
+        <button id="menuButton">☰ Menu</button>
+        <div class="menu" id="menu">
+          <div class="dropdown">
+            <button class="dropbtn">Narrativas da Arte ▼</button>
+            <div class="dropdown-content">
+              <a href="/pages/arte-egipcia.html">A Arte Egípcia: Cultura, Poder e Ensino</a>
+              <a href="/pages/arte-pre-literaria.html">Arte Pré-Literária: Entre a Magia e a Vida Cotidiana</a>
+              <a href="/pages/arte-na-grecia.html">A Arte na Grécia Antiga - Expressão de uma sociedade em construção</a>
+              <a href="/pages/beleza-ideal.html">Beleza Ideal - Heranças, Padrões e Exclusões</a>
+              <a href="/pages/grandeza-roma.html">A Grande de Roma - Arte, Poder e Imagem Pública</a>
+              <a href="/pages/egito-antigo.html">Do Egito Antigo ao Hoje - A imagem como poder</a>
+            </div>
+          </div>
+          <a href="/pages/artigos.html">Arte Educa</a>
+          <a href="/pages/contato.html">Processos Criativos</a>
+          <a href="#mission">Visita</a>
+          <a href="#destaques">Acad.</a>
+          <a href="#cards">Sobre Nós</a>
+        </div>
+      </nav>
     </div>
-    <nav class="menu">
-      <a href="/index.html">Início</a>
-      <a href="sobre.html">Sobre</a>
-      <a href="artigos.html">Artigos</a>
-      <a href="contato.html">Contato</a>
-    </nav>
   </header>
 
   <main class="introducao">
@@ -57,5 +71,28 @@
   <footer class="rodape">
     <p>&copy; 2025 Zoom na Arte. Todos os direitos reservados.</p>
   </footer>
+
+  <script>
+    const menuButton = document.getElementById('menuButton');
+    const menu = document.getElementById('menu');
+
+    menuButton.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+
+  
+    // Dropdown toggle
+    document.querySelector('.dropbtn').addEventListener('click', function (e) {
+     e.stopPropagation();
+    document.querySelector('.dropdown-content').classList.toggle('show');
+    });
+
+// Fecha o dropdown se clicar fora
+document.addEventListener('click', function () {
+  const open = document.querySelector('.dropdown-content.show');
+  if (open) open.classList.remove('show');
+});
+
+  </script>
 </body>
 </html>
