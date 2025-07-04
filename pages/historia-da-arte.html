@@ -4,41 +4,26 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Zoom na Arte</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
 
-<header>
-  <h1>Zoom na Arte</h1>
-  <nav class="navbar">
-    <button id="menuButton">☰ Menu</button>
-    <div class="menu" id="menu">
-      <a href="/pages/sobre.html">Narrativas da Arte</a>
-      <a href="/pages/artigos.html">Arte Educa</a>
-      <a href="/pages/contato.html">Processos Criativos</a>
-      <a href="#mission">Visita</a>
-      <a href="#destaques">Acad.</a>
-      <a href="#cards">Sobre Nós</a>
-    </div>
-    <input type="text" placeholder="Buscar..." id="searchInput" />
-  </nav>
-</header>
-
-<script>
-  const menuBtn = document.getElementById('menuButton');
-  const Menu = document.getElementById('menu');
-
-  menuBtn.addEventListener('click', () => {
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-  });
-
-  // (opcional) Fechar ao clicar fora do menu
-  document.addEventListener('click', (e) => {
-    if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
-      menu.style.display = 'none';
-    }
-  });
-</script>
+  <header>
+    <h1>Zoom na Arte</h1>
+    <nav>
+      <button id="menuButton">☰ Menu</button>
+      <nav class="menu" id="menu">
+        <a href="index.html">Início</a>
+        <a href="/pages/sobre.html">Sobre</a>
+        <a href="/pages/artigos.html">Artigos</a>
+        <a href="/pages/contato.html">Contato</a>
+        <a href="#mission">Missão</a>
+        <a href="#destaques">Destaques</a>
+        <a href="#cards">Seções</a>
+      </nav>
+      <input type="text" placeholder="Buscar..." id="searchInput" />
+    </nav>
+  </header>
 
   <section class="hero">
     <img src="/images/capa.png" alt="Capa Zoom na Arte" />
@@ -52,7 +37,7 @@
   </section>
 
   <section class="destaques-section" id="destaques">
-    <h2>Destaques</h2>
+    <h2>Destaques do Zoom na Arte</h2>
     <div class="carousel">
       <div class="carousel-item">
         <h3>Mostra de Fotografia</h3>
@@ -70,28 +55,28 @@
   </section>
 
   <section class="cards-carousel">
-  <div class="card-card" style="background-image: url('/images/4925247356232904561.jpg');">
+  <div class="card-card" style="background-image: url('images/historia.jpg');">
     <div class="card-content">
       <h2>📘 História da Arte</h2>
       <p>Movimentos artísticos, artistas, contexto social e transformações visuais ao longo do tempo.</p>
-      <a href="historia-da-arte.html" class="button-link">Explorar</a>
+      <a href="pages/historia-da-arte.html" class="button-link">Explorar</a>
     </div>
   </div>
-  <div class="card-card" style="background-image: url('/images/4925247356232904561.jpg');">
+  <div class="card-card" style="background-image: url('images/4925247356232904561.jpg');">
     <div class="card-content">
       <h2>🎨 Técnicas e Processos</h2>
       <p>Pintura, colagem, fotografia e práticas do cotidiano.</p>
       <button>Aprender</button>
     </div>
   </div>
-  <div class="card-card" style="background-image: url('/images/4925247356232904561.jpg');">
+  <div class="card-card" style="background-image: url('images/cotidiano.jpg');">
     <div class="card-content">
       <h2>📷 Arte no Cotidiano</h2>
       <p>Um olhar sobre registros sensíveis no ambiente urbano e natural.</p>
       <button>Ver Galeria</button>
     </div>
   </div>
-  <div class="card-card" style="background-image: url('/images/4925247356232904561.jpg');">
+  <div class="card-card" style="background-image: url('images/art.png');">
     <div class="card-content">
       <h2>👥 Artistas e Cultura</h2>
       <p>Conheça artistas maranhenses e como dialogam com política e identidade.</p>
