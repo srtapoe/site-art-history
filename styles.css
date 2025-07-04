@@ -264,3 +264,46 @@
 .menu a:hover {
   background-color: #9c2204;
 }
+
+
+/* Dropdown no menu sanduíche */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: #6b2e12;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8a3b1a;
+  min-width: 250px;
+  z-index: 1;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #D1891C;
+}
+
+.show {
+  display: flex;
+}

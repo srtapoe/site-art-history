@@ -13,7 +13,17 @@
   <nav class="navbar">
     <button id="menuButton">☰ Menu</button>
     <div class="menu" id="menu">
-      <a href="/pages/sobre.html">Narrativas da Arte</a>
+      <div class="dropdown">
+        <button class="dropbtn">Narrativas da Arte ▼</button>
+        <div class="dropdown-content">
+          <a href="/pages/arte-egipcia.html">A Arte Egípcia: Cultura, Poder e Ensino</a>
+          <a href="/pages/arte-pre-literaria.html">Arte Pré-Literária: Entre a Magia e a Vida Cotidiana</a>
+          <a href="/pages/arte-na-grecia.html">A Arte na Grécia Antiga - Expressão de uma sociedade em construção</a>
+          <a href="/pages/beleza-ideal.html">Beleza Ideal - Heranças, Padrões e Exclusões</a>
+          <a href="/pages/grandeza-roma.html">A Grande de Roma - Arte, Poder e Imagem Pública</a>
+          <a href="/pages/egito-antigo.html">Do Egito Antigo ao Hoje - A imagem como poder</a>
+        </div>
+      </div>
       <a href="/pages/artigos.html">Arte Educa</a>
       <a href="/pages/contato.html">Processos Criativos</a>
       <a href="#mission">Visita</a>
@@ -23,23 +33,6 @@
     <input type="text" placeholder="Buscar..." id="searchInput" />
   </nav>
 </header>
-
-<script>
-  const menuBtn = document.getElementById('menuButton');
-  const Menu = document.getElementById('menu');
-
-  menuBtn.addEventListener('click', () => {
-    menu.style.display = menu.style.display === 'flex' ? 'none' : 'flex';
-  });
-
-  // (opcional) Fechar ao clicar fora do menu
-  document.addEventListener('click', (e) => {
-    if (!menu.contains(e.target) && !menuBtn.contains(e.target)) {
-      menu.style.display = 'none';
-    }
-  });
-</script>
-
   <section class="hero">
     <img src="/images/capa.png" alt="Capa Zoom na Arte" />
   </section>
@@ -116,6 +109,19 @@
 
     document.getElementById('searchInput').addEventListener('input', function() {
       console.log('Busca:', this.value);
+    })
+
+    // Dropdown toggle
+    document.querySelector('.dropbtn').addEventListener('click', function (e) {
+     e.stopPropagation();
+    document.querySelector('.dropdown-content').classList.toggle('show');
     });
+
+// Fecha o dropdown se clicar fora
+document.addEventListener('click', function () {
+  const open = document.querySelector('.dropdown-content.show');
+  if (open) open.classList.remove('show');
+});
+
   </script>
 </body>
