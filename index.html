@@ -24,8 +24,24 @@
           <a href="/pages/egito-antigo.html">Do Egito Antigo ao Hoje - A imagem como poder</a>
         </div>
       </div>
-      <a href="/pages/artigos.html">Arte Educa</a>
-      <a href="/pages/contato.html">Processos Criativos</a>
+      
+      <div class="dropdown2">
+        <button class="dropbtn2">Arte Educa ▼</button>
+        <div class="dropdown-content2">
+          <a href="/pages/arteterapia.html">A Arteterapia: Da antiguidade ao reconhecimento profissional</a>
+          <a href="/pages/educaçãomulheres.html">Educação das Mulheres no Brasil Colonial e Imperial</a>
+          <a href="/pages/vozessilenciadas.html">Resistências Invisibilizadas an História</a>
+          <a href="/pages/legadoditadura.html">O legado da Ditadura para a Educação no Brasil</a>
+        </div>
+      </div>
+
+      <div class="dropdown3">
+        <button class="dropbtn3">Processos Criativos ▼</button>
+        <div class="dropdown-content3">
+          <a href="/pages/fotografiaExperimental.html">Fotografia Experimental</a>
+          <a href="/pages/linguagemVisual.html">Linguagem Visual e seus Elementos</a>
+        </div>
+      </div>
       <a href="#mission">Visita</a>
       <a href="#destaques">Acad.</a>
       <a href="#cards">Sobre Nós</a>
@@ -34,7 +50,7 @@
   </nav>
 </header>
   <section class="hero">
-    <img src="images/capa.png" alt="Capa Zoom na Arte" />
+    <img src="pages/images/capa.png" alt="Capa Zoom na Arte" />
   </section>
 
   <section class="mission" id="mission">
@@ -117,9 +133,29 @@
     document.querySelector('.dropdown-content').classList.toggle('show');
     });
 
+    document.querySelector('.dropbtn2').addEventListener('click', function (e) {
+     e.stopPropagation();
+    document.querySelector('.dropdown-content2').classList.toggle('show');
+    })
+
+    document.querySelector('.dropbtn3').addEventListener('click', function (e) {
+     e.stopPropagation();
+    document.querySelector('.dropdown-content3').classList.toggle('show');
+    });
+
 // Fecha o dropdown se clicar fora
 document.addEventListener('click', function () {
   const open = document.querySelector('.dropdown-content.show');
+  if (open) open.classList.remove('show');
+});
+
+document.addEventListener('click', function () {
+  const open = document.querySelector('.dropdown-content2.show');
+  if (open) open.classList.remove('show');
+})
+
+document.addEventListener('click', function () {
+  const open = document.querySelector('.dropdown-content3.show');
   if (open) open.classList.remove('show');
 });
 
