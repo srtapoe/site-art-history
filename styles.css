@@ -377,6 +377,43 @@
   background-color: #D1891C;
 }
 
+.dropdown4 {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn4 {
+  background-color: #6b2e12;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: left;
+  width: 100%;
+}
+
+.dropdown-content4 {
+  display: none;
+  position: absolute;
+  background-color: #8a3b1a;
+  min-width: 250px;
+  z-index: 1;
+  flex-direction: column;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.dropdown-content4 a {
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content4 a:hover {
+  background-color: #D1891C;
+}
+
 .show {
   display: flex;
 }

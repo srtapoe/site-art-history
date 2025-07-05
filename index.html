@@ -42,9 +42,17 @@
           <a href="/pages/linguagemVisual.html">Linguagem Visual e seus Elementos</a>
         </div>
       </div>
-      <a href="#mission">Visita</a>
-      <a href="#destaques">Acad.</a>
-      <a href="#cards">Sobre Nós</a>
+
+      <div class="dropdown4">
+        <button class="dropbtn4">Acad. ▼</button>
+        <div class="dropdown-content4">
+          <a href="pages/coletivademaio.html">Coletiva de Maio</a>
+          <a href="pages/descolonizando.html">Descolonizando a Educação científica</a>
+          <a href="pages/folhadeResenha.html">Significado do ensino da arte na Educação</a>
+        </div>
+      </div>
+      <a href="/pages/visita.html">Visita</a>
+      <a href="/pages/sobrenos.html">Sobre Nós</a>
     </div>
     <input type="text" placeholder="Buscar..." id="searchInput" />
   </nav>
@@ -141,6 +149,11 @@
     document.querySelector('.dropbtn3').addEventListener('click', function (e) {
      e.stopPropagation();
     document.querySelector('.dropdown-content3').classList.toggle('show');
+    });
+
+    document.querySelector('.dropbtn4').addEventListener('click', function (e) {
+    e.stopPropagation();
+    document.querySelector('.dropdown-content4').classList.toggle('show');
     });
 
 // Fecha o dropdown se clicar fora
