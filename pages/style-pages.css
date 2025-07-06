@@ -126,3 +126,294 @@
     }
   }
   
+
+  .hero-duas-imagens {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* evita que uma puxe a outra verticalmente */
+  gap: 20px; /* espaço entre as imagens */
+  flex-wrap: wrap; /* permite quebrar linha se a tela for pequena */
+  padding: 20px;
+}
+
+
+.hero-duas-imagens img {
+  max-width: 100%;
+  width: 300px; /* ou o tamanho que quiser */
+  height: auto;
+  object-fit: contain;
+}
+
+  .perfil-galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+  }
+
+  .perfil {
+    width: 150px;
+    text-align: center;
+  }
+
+  .perfil img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .perfil p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+  }
+
+
+/* estas linhas são para a pagina arte egipcia*/
+  .duas-imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Responsivo: se a tela for pequena, empilha */
+  gap: 40px;
+  padding: 20px;
+}
+
+.imagem-legenda {
+  max-width: 350px;
+  text-align: center;
+}
+
+.imagem-legenda img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.imagem-legenda p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* utilizado na página visita para colocar as imagens lado a lado*/
+.galeria-dupla {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.galeria-dupla .imagem {
+  flex: 0 1 45%; /* cada imagem ocupa cerca de 45% do espaço, com margem entre elas */
+  text-align: center;
+}
+
+.galeria-dupla img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.galeria-dupla .imagem img:hover {
+  transform: scale(1.03);
+}
+
+
+/*usado na página visita na parte de quilombo da liberdade*/
+.galeria-quilombo {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.galeria-quilombo .imagem {
+  flex: 0 1 45%;
+  text-align: center;
+}
+
+.galeria-quilombo .imagem img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.galeria-quilombo .imagem img:hover {
+  transform: scale(1.03);
+}
+
+/* usado na página grandez de roma para ajustar as duas imagens que estão na página*/
+.duas-imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Para empilhar em telas pequenas */
+  gap: 10px;
+  padding: 20px;
+}
+
+.imagem-legenda {
+  flex: 0 1 45%;
+  text-align: center;
+}
+
+.imagem-legenda img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Proporção fixa: 4 de largura por 3 de altura */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.imagem-legenda p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+/*Usado na página fotografia experimental para a ajustar as imagens no ponto 5*/
+.duas-imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.imagem-proporcional {
+  flex: 0 1 45%;
+}
+
+.imagem-proporcional img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Define a proporção fixa */
+  object-fit: cover;   /* Corta as bordas se necessário para preencher */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+/*Usado na página fotografia experimental para ajustara as imagens no ponto 2*/
+.duas-imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.imagem-proporcional {
+  flex: 0 1 45%;
+}
+
+.imagem-proporcional img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* Define a proporção fixa */
+  object-fit: cover;   /* Corta as bordas se necessário para preencher */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*Usado na página linguagem visual na parte de espiral*/
+.quadruplas-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 24px;
+  padding: 20px;
+}
+
+.bloco-img {
+  flex: 0 1 45%; /* cada imagem ocupa cerca de 45% da largura */
+  text-align: center;
+}
+
+.bloco-img img {
+  width: 100%;
+  aspect-ratio: 4 / 3; /* mantém a proporção visual */
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.bloco-img p {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+/*usado na página linguagem visual na parte de desenhos com formas*/
+.duas-imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.imagem-bloco {
+  flex: 0 1 45%;
+}
+
+.imagem-bloco img {
+  width: 100%;
+  aspect-ratio: 9 / 16; /* mantém proporção visual */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/*usado na página linguagem visual na parte fuligem e textura*/
+.duas-imagens {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.imagem-bloco {
+  flex: 0 1 45%;
+}
+
+.imagem-bloco img {
+  width: 100%;
+  aspect-ratio: 9 /16; /* ou 1 / 1 para quadradas */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*usado na página linguagem visual na parte de colagem*/
+.imagens-duplas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.bloco-img {
+  flex: 0 1 45%;
+}
+
+.bloco-img img {
+  width: 100%;
+  aspect-ratio: 9 / 16; /* ou 1 / 1 se quiser quadrado */
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
