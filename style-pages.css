@@ -50,6 +50,7 @@
     margin-top: 2rem;
     margin-bottom: 0.5rem;
     color: #5c1e0e;
+    
   }
   
   
@@ -255,3 +256,4 @@
 .show {
   display: flex;
 }
+
