@@ -100,14 +100,24 @@
     color: #4a2e1d;
   }
   
-  /* Rodapé */
-  footer.rodape {
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    color: #4a2e1d;
-    font-size: 0.9rem;
-  }
+.rodape {
+  background-color: #5C1E0E;  /* Cor de fundo */
+  color: white;               /* Cor do texto */
+  text-align: center;         /* Centraliza o texto */
+  padding: 20px 10px;         /* Espaçamento interno */
+  font-size: 0.9rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.rodape {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
   
   /* Responsividade simples */
   @media (max-width: 600px) {
@@ -416,4 +426,27 @@
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/*usado na página fotografia experimental, parte de revelação de foto*/
+.duas-imagens2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px; /* Espaço entre as imagens */
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.duas-imagens2 img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.duas-imagens2 div {
+  flex: 1 1 45%; /* Ocupa até 45% de largura, adaptável */
+  max-width: 45%;
 }
