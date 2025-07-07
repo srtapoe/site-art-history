@@ -436,3 +436,51 @@
   .carousel-buttons button:hover {
     background-color: #b46808;
   }
+
+  .cards-carousel-wrapper {
+    background-color: #d7850d;
+    padding: 40px 20px;
+  }
+  
+  .cards-header {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 2rem;
+    color: #3B2F2F;
+    transition: color 0.3s ease;
+    cursor: default; /* muda para 'pointer' se quiser que pareça clicável */
+  }
+  
+  .cards-header:hover {
+    color: #F5D49B; /* um tom claro dentro da paleta do site */
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #5C1E0E; /* mantém o padrão do cabeçalho */
+    color: white;
+    font-size: 0.9rem;
+  }
+  
+  html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .page-container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer {
+    margin-top: auto;
+    text-align: center;
+    padding: 1rem;
+    background-color: #5C1E0E;
+    color: white;
+    font-size: 0.9rem;
+  }
+  
