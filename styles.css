@@ -446,7 +446,7 @@
     text-align: center;
     font-size: 3em;
     margin-bottom: 2rem;
-    color: #3B2F2F;
+    color: #fff3db;
     transition: color 0.3s ease;
     cursor: default; /* muda para 'pointer' se quiser que pareça clicável */
   }
