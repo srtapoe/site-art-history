@@ -8,6 +8,7 @@
 </head>
 <body>
 
+<div class="page-container"> <!-- INÍCIO DO ENVOLVEDOR -->
 <header>
   <h1>Zoom na Arte</h1>
   <nav class="navbar">
@@ -67,28 +68,33 @@
   </section>
 
 
-  <section class="cards-carousel">
-    <h2>Destaques</h2>
-    <div class="card-card" style="background-image: url('pages/images/GridArt_20250706_123330806.jpg');">
-    <div class="card-content">
-      <h2>📘 Fotografia Experimental</h2>
-      <a href="pages/fotografiaExperimental.html" class="button-link">Explorar</a>
+  <section class="cards-carousel-wrapper">
+    <h2 class="cards-header">Destaques</h2>
+    
+    <div class="cards-carousel">
+      <div class="card-card" style="background-image: url('pages/images/GridArt_20250706_123330806.jpg');">
+        <div class="card-content">
+          <h2>📘 Fotografia Experimental</h2>
+          <a href="pages/fotografiaExperimental.html" class="button-link">Explorar</a>
+        </div>
+      </div>
+    
+      <div class="card-card" style="background-image: url('pages/images/ChatGPT_Image_29_de_jun._de_2025,_20_44_04_copia.png');">
+        <div class="card-content">
+          <h2>Resistências Invisibilizadas</h2>
+          <a href="pages/vozessilenciadas.html" class="button-link">Explorar</a>
+        </div>
+      </div>
+    
+      <div class="card-card" style="background-image: url('pages/images/GridArt_20250706_162701013.jpg');">
+        <div class="card-content">
+          <h2>Criações dos Estudantes</h2>
+          <a href="pages/linguagemVisual.html" class="button-link">Explorar</a>
+        </div>
+      </div>
     </div>
-    </div>
-    <div class="card-card" style="background-image: url('pages/images/ChatGPT_Image_29_de_jun._de_2025\,_20_44_04_copia.png');">
-    <div class="card-content">
-      <h2>Resistências Invisibilizadas</h2>
-      <a href="pages/vozessilenciadas.html" class="button-link">Explorar</a>
-    </div>
-    </div>
-    <div class="card-card" style="background-image: url('pages/images/GridArt_20250706_162701013.jpg');">
-    <div class="card-content">
-      <h2>Criações dos Estudantes</h2>
-      <a href="pages/linguagemVisual.html" class="button-link">Explorar</a>
-    </div>
-    </div>
-    </section>
-
+  </section>
+  
     <section class="video-carousel-container">
   <div class="video-carousel-track" id="videoCarousel">
     <figure class="video-slide">
@@ -126,6 +132,7 @@
     <footer class="footer">
     © 2025 Zoom na Arte — Projeto interdisciplinar do curso de Artes Visuais.
     </footer>
+  </div> <!-- FIM DO ENVOLVEDOR -->
 
   <script>
     const menuButton = document.getElementById('menuButton');
